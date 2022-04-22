@@ -1,0 +1,5 @@
+steps:
+-name: 'gcr.io/cloud-build/docker'
+ args: ['build', '-t', 'gct.io/citric-nova-348007/first_app', '.']
+- name: 'gcr.io/cloud-build/docker'
+ args: ['push', '-t', 'gct.io/citric-nova-348007/first_app']
